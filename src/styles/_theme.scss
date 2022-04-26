@@ -1,0 +1,20 @@
+$light: #ffffff;
+$dark: #212121;
+$default: #e0e0e0;
+$primary: #2196f3;
+$secondary: #03a9f4;
+$accent: #ff9800;
+$disabled: #d4d4d4;
+$error: #f44336;
+
+.btn-decorated {
+  font-size: 14px;
+  padding: 6px 8px;
+
+  color: $dark;
+  background-color: $default;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  transition: all 0.3s ease 0s;
+}

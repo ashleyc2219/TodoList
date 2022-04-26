@@ -1,0 +1,62 @@
+@import '../styles/theme';
+.input-form {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  padding-bottom: 25px;
+  .label.field {
+    width: 100%;
+    margin-bottom: 5px;
+    label {
+      font-size: 14px;
+    }
+  }
+  .form.field {
+    display: flex;
+    input {
+      flex-grow: 1;
+      margin-right: 5px;
+      border-style: solid;
+      // TODO: warning color class
+      border-color: $default;
+
+      // TODO: responsive size
+      font-size: 14px;
+      padding: 6px 8px;
+      border-width: 1px;
+      &:focus-visible {
+        outline: none;
+      }
+    }
+    input.error {
+      border-color: red;
+    }
+    button {
+      min-width: 100px;
+      font-size: 14px;
+      padding: 6px 8px;
+
+      color: $dark;
+      background-color: $default;
+
+      border: none;
+      outline: none;
+      cursor: pointer;
+      transition: all 0.3s ease 0s;
+      &:disabled {
+        cursor: not-allowed;
+      }
+    }
+  }
+  .errorMsg.field {
+    display: none;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    color: red;
+    font-size: 14px;
+  }
+  .errorMsg.field.error {
+    display: block;
+  }
+}

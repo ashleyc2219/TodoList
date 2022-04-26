@@ -1,0 +1,33 @@
+@import '../styles/theme';
+* {
+  margin: 0;
+}
+.Todolist {
+  width: 450px;
+  margin: 0 auto;
+  margin-top: 20px;
+  .Todolist_header {
+    border: 1px solid $default;
+    padding: 15px;
+    margin-bottom: 15px;
+
+    .title {
+      font-size: 36px;
+      font-weight: bold;
+      color: $dark;
+      margin: 0 0 24px 0;
+    }
+    
+  }
+  main {
+    
+    .list-field {
+      display: flex;
+      flex-direction: column;
+      margin-top: 15px;
+
+
+      
+    }
+  }
+}

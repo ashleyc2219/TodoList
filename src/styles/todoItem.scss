@@ -1,0 +1,44 @@
+@import './theme';
+
+.list_item {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  min-height: 45px;
+  font-size: 16px;
+  border-bottom: 1px solid $default;
+  padding-bottom: 5px;
+  margin-top: 5px;
+
+  .task-name {
+    flex-grow: 2;
+    margin-right: 5px;
+    word-break: break-all;
+    max-width: 74%;
+  }
+
+  button {
+    border: none;
+    outline: none;
+    cursor: pointer;
+    background-color: $default;
+    font-size: 14px;
+    padding: 6px 8px;
+
+    margin-left: 10px;
+  }
+  .time{
+    display: none;
+  }
+}
+.list_item.completed {
+  color: $disabled;
+  button {
+    display: none;
+  }
+  .time{
+    display: block;
+  }
+}
